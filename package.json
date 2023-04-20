@@ -1,22 +1,36 @@
 {
-  "name": "my-app",
+  "name": "scan",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vrgnop.online/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "classnames": "^2.3.2",
+    "firebase": "^9.15.0",
+    "prettier": "^2.8.2",
     "react": "^18.2.0",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "web-vitals": "^2.1.0"
+    "react-scrollable-anchor": "^0.6.1",
+    "sass": "^1.59.2",
+    "scss": "^0.2.4",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +49,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/serg310583/scan-project.git",
+  "author": "serg310583 <serg310583@mail.ru>",
+  "license": "MIT"
 }
