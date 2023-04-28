@@ -43,18 +43,13 @@ section {
   animation: rotate 400ms linear;
 }
 
-
-
 button, input[type=submit] {
   cursor: pointer;
   border: none;
   outline: none;
   font-family: 'Inter';
   border-radius: 5px;
-  transition: all 200ms;
-  //&:not([disabled]):hover {
-  //  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.2);
-  //}
+  transition: all 200ms;  
 }
 
 input {
@@ -70,10 +65,9 @@ input {
 }
 
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
+input::-webkit-inner-spin-button {  
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0; 
 }
 
 input[type=submit] {
@@ -201,7 +195,3 @@ input:focus {
       font-size: 14px;
     }
   }
-
-//.err {
-//  position:absolute ;
-//}

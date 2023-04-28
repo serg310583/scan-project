@@ -13,7 +13,6 @@ import Loader from "../../components/Loader/Loader";
 import NotFound from "../../components/NotFound/NotFound";
 import { setStatus } from "../../redux/slices/searchObjectsSlice";
 import { useNavigate } from "react-router-dom";
-import Skeleton from "../../components/Skeleton/Skeleton";
 import Button from "../../components/Button/Button";
 import globals from "../../globals/globals";
 
@@ -31,8 +30,7 @@ function Response() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   React.useEffect(() => {
-    if (objects) {
-      console.log(1);
+    if (objects) {      
       const bodyRequestDocument = {
         ids: [],
       };

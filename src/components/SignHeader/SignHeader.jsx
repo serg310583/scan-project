@@ -10,15 +10,14 @@ import useAuth from '../../hooks/useAuth';
 function SignHeader({ hideMobile, setShow }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const onClickRemoveUser = () => {
-    dispatch(removeUser());
-    setShow && setShow(false);
-  };
   const onClickSignIn = () => {
     navigate('/authorization/signin');
     setShow && setShow(false);
   };
+  const onClickRemoveUser = () => {
+    dispatch(removeUser());
+    setShow && setShow(false);
+  };  
   const onClickSignUp = () => {
     navigate('/authorization/signup');
     setShow && setShow(false);
@@ -33,7 +32,7 @@ function SignHeader({ hideMobile, setShow }) {
         )}
       >
         <div className={styles.name}>
-          <span>Сергей Ц. </span>
+          <span>User</span>
           <button onClick={onClickRemoveUser}>Выйти</button>
         </div>
         <div className={styles.avatar}>
