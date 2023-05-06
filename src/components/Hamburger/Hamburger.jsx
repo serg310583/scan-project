@@ -6,7 +6,6 @@ import Menu from "../Menu/Menu";
 import Popup from "../Popup/Popup";
 import SignHeader from "../SignHeader/SignHeader";
 import whiteLogo from "../../assets/images/white-logo.svg";
-import useAuth from "../../hooks/useAuth";
 
 function Hamburger({ menu, setMenu }) {
   const [isShow, setShow] = React.useState(false);
